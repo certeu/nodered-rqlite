@@ -12,7 +12,7 @@ services:
     ports:
       - '1880:1880' # Expose Node-RED's UI
     volumes:
-      - ./rqlite-storage.js:/data/rqlite-storage.mjs
-      - ./settings.js:/data/settings.mjs # Custom settings if needed
+      - ./rqlite-storage.mjs:/data/rqlite-storage.mjs
+      - ./settings.mjs:/data/settings.mjs # Custom settings if needed
     depends_on:
       - rqlite
